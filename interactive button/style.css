@@ -1,0 +1,59 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  background-color: #3498db;
+  margin: 20px auto;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.box:hover {
+  background-color: #e74c3c;
+  transform: scale(1.1);
+}
+
+/* Animation Keyframes */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Applied Animation Class */
+.spin {
+  animation: spin 2s linear infinite;
+}
+
+.bounce {
+  animation: bounce 1s ease infinite;
+}
